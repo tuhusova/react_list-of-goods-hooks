@@ -24,7 +24,7 @@ export const App: React.FC = () => {
     SORT_FIELD_REVERSE = 'reverse'
   }
 
-  function getPreparedGoods(goods: string[], sortField: string) {
+  function getPreparedGoods(goods: string[], sortField: SortType) {
     let preparedGoods = [...goods];
 
     if (sortField) {
